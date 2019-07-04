@@ -1,0 +1,167 @@
+/* Typography imported from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+p,
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-top: 20px;
+}
+
+.header-subtitle {
+  text-align: center;
+}
+
+.platforms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 2rem;
+  padding: 20px;
+}
+
+.platforms > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.platform-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.platform-card:hover {
+  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media only screen and (max-width: 439px) {
+  .platform-card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .platform-card:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+}
+
+.platform-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.platform-card-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.platform-card-title {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-info-text {
+  text-align: center;
+}
+
+.kandou-link {
+  color: #1bd05d;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon-link {
+  margin: 10px 5px;
+  opacity: 0.6;
+}
+
+.social-icon-link:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 439px) {
+  .social-icon-link {
+    opacity: 1;
+  }
+}
+
+.social-icon-logo {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
